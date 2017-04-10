@@ -1,0 +1,345 @@
+* {
+	font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	box-sizing: border-box;
+	font-size: 100%;
+}
+
+nav {
+	background-color: white;
+	position: fixed;
+	width: 100%;
+	height: 60px;
+	z-index: 99;
+	border-bottom: 2px solid #cccccc;	
+}
+.nav-content-div {
+	width: 60%;
+	margin: 0 auto;
+}
+
+
+/* ../ will go upward in the directory */
+body {
+	font-style: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+	background-image: url(../images/naturalblack.png);
+	margin: 0 auto;
+	height: 100%;
+}
+
+body a {
+	text-decoration: none;
+}
+.section-content-div {
+	width: 60%;
+	height: 100%;
+	margin: 0 auto;
+	min-height: calc(100vh - 70px);
+}
+h1{
+	color: #4aaaa5;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding-left: .8em;
+	margin-top: .8em;
+	font-size: 2em;
+	font-weight: bold;
+}
+
+h2 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	margin: 0 auto;
+	text-align: center;
+	margin-top: .625em;
+	font-size: 1.5em;
+	padding: 10px;
+	font-weight: bold;
+
+}
+h3 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding-left: .625em;
+	margin-bottom: .625em;
+	margin-top: .625em;
+	font-size: 1.25em;
+}
+
+p {
+	padding:1.25em;
+	color: #777777;
+	margin: 0 auto;
+	font-size: 1.25em;
+	line-height: 1.5;
+}
+
+#name {
+	background-color: #4aaaa5;
+	color: white;
+	font-size: 1.65em;
+	padding: .625em;
+	float: left;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+.bar {
+	float: right;
+	color: grey;
+	font-size: 1.25em;
+}
+
+.menu {
+	float:right;
+	padding-top:1em;
+	padding-right:.9em;
+	color: grey;
+	font-size:1.25em;
+}
+
+section {
+	color: #777777;
+	float:left;
+	width: 60%;
+	background-color: #ffffff;
+	margin-top: 5em;
+	position: relative;
+	margin-bottom: 2em;
+	box-sizing: border-box;
+	border: 2px solid #dddddd;
+}
+
+aside {
+	color: #4aaaa5;
+	float:right;
+	width: 35%;
+	background-color: #ffffff;
+	margin-top: 5em;
+	position: relative;
+	border: 1px solid lightgrey;
+}
+
+footer {
+	
+	width: 100%;
+	border-top: 5pt solid #4aaaa5;
+	text-align: center;
+	background-color: #666666;
+	clear: both;
+	padding-top: 1.75em;
+	height: 70px;
+}
+
+#bio-pic {
+	display: block;
+	width: 40%;
+	border-radius: 23%;
+	border: solid #4aaaa5 ;
+	margin: 0 10px auto;
+	float:left;
+}
+
+.connect-pic {
+	width: 3.75em;
+}
+
+input {
+	width: 80%;
+	margin-left:5%;
+	border: 1px solid;
+	padding: 5px;
+}
+
+#message {
+	padding-bottom: 50px;
+}
+
+button {
+	font-size: 1.25em;
+	color: white;
+	background-color:#4aaaa5;
+	padding-left: 10px;
+	margin-bottom:20px;
+	margin-left: 15px;
+}
+
+.pictag {
+	position: absolute;
+	bottom:10px;
+	background-color: #4aaaa5;
+	color: white;
+	margin: 0 auto;
+	width: 100%;
+	height: 18%;
+	padding-top: 5px;
+	text-align: center;
+	font-size:1.25em;
+	padding-bottom: 10px;
+}
+
+.picture {
+	position: relative;
+	float:left;
+	width: 42%;
+	margin-left: 1em;
+	margin-top:1em;
+}
+
+.pics {
+	width:100%;
+}
+
+.menu:hover { 
+	color: blue;
+	cursor: pointer;
+}
+
+.hover-outline:hover {
+  outline: 5px solid gray;
+  cursor: pointer;
+}
+
+.connect-pic:hover {
+	outline: 5px solid pink;
+	cursor: pointer;
+}
+.pics:hover {
+  outline: 5px solid gray;
+  cursor: pointer;
+}
+
+.picture:hover .pictag {
+  color: blue;
+  cursor: pointer;
+}
+
+#hr-section {
+	width:85%;
+	height: 3px;
+	background-color: lightgrey;
+	border: 0;
+}
+
+#hr-aside {
+	width: 80%;
+	height: 2px;
+	background-color: lightgrey;
+	border: 0;
+}
+
+.connect-pic-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 1em;
+}
+
+@media screen and (max-width: 980px) {
+	
+	.nav-content-div {
+		width: 80%;
+	}
+	
+	.section-content-div {
+		width: 80%;
+	}
+	section {
+		width: 60%;
+		margin-left: auto;
+	}
+
+	aside {
+		
+		width:30%;
+		margin-right:auto;
+	}
+	#bio-pic {
+		width: 80%;
+		float: none;
+		margin: 0 auto;
+	}
+	#name {
+		margin-left: auto;
+	}
+	.menu-bar {
+		margin-right: auto;
+	}
+
+	.picture {
+		margin: 0 auto;
+		float: none;
+		width: 85%;
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	
+	.nav-content-div {
+		width: 95%;
+	}
+	
+	.section-content-div {
+		width: 100%;
+	}
+	section {
+		width: 95%;
+		float:relative;
+		margin-left: 2.5%;
+	}
+	aside {
+		width:95%;
+		float:none;
+		clear:both;
+		margin: auto;
+		margin-bottom:20px;
+	}
+
+	.picture {
+		width:42%;
+		float:left;
+		margin: 10px 10px auto;
+	}
+	
+	#bio-pic {
+		width: 50%;
+		float: left;
+		margin: 1em 1em auto;
+	}
+}
+
+@media screen and (max-width: 640px) {
+
+	.nav-content-div {
+		width: 100%;
+	}
+	#name {
+		width: 100%;
+	}
+	.menu-bar {
+		float: left;
+		background-color: white;
+		width:100%;
+		text-align:center;
+		height: 30px;
+		border-bottom: .5px solid lightgrey;
+	}
+	.menu {
+		float:none;
+	}
+	#bio-pic {
+		width: 80%;
+		display: block;
+		margin: 0 auto;
+		float: none;
+	}
+	nav {
+		position: static;
+	}
+
+	.picture {
+		width: 96%;
+	}
+
+	section {
+		margin-top: 3em;
+	}
+}
